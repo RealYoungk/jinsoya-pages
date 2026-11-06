@@ -253,7 +253,8 @@ legend{padding:0; margin-bottom:.5rem}
 .chips{display:flex; flex-wrap:wrap; gap:.5rem}
 .chip{display:inline-flex; align-items:center; gap:.375rem; min-height:2.75rem; padding:.375rem .875rem; border:1px solid #D3DAD4; border-radius:999px; cursor:pointer; font-size:.875rem}
 .chip input{width:1rem; height:1rem; margin:0; accent-color:var(--green)}
-.chip:has(:checked){border-color:var(--ink); background:var(--ink); color:#fff; font-weight:600}
+.chip:has(:checked), .survey .chip:has(:checked){border-color:var(--ink); background:var(--ink); color:#fff; font-weight:600}
+.chip:has(:checked) input{accent-color:var(--lime)}
 .chip:has(:focus-visible){outline:2px solid var(--green); outline-offset:2px}
 .chip input:focus-visible{outline:none}
 .consent{border-top:1px solid var(--line); padding-top:1rem; font-size:.8125rem; display:grid; gap:.5rem; color:var(--muted)}
