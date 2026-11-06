@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>진소야 | 1∼2인 가구를 위한 마이크로 그로서리 · 채소값 75% 아끼고, 버리는 건 없애드려요</title>
-<meta name="description" content="1∼2인 가구를 위한 마이크로 그로서리 진소야. 채소값을 75% 아껴드리고, 버리는 채소는 없애드릴게요. 레시피대로 한 개씩 파는 채소가게. 퇴근길 채소가게 진소야가 2027년 상반기 서울 역 앞에서 먼저 열려요.">
+<title>진소야 | 1,487만 1∼2인 가구를 위한 마이크로 그로서리 · 채소값 75% 아끼고, 버리는 건 없애드려요</title>
+<meta name="description" content="1,487만 1∼2인 가구를 위한 마이크로 그로서리 진소야. 채소값을 75% 아껴드리고, 버리는 채소는 없애드릴게요. 레시피대로 한 개씩 파는 채소가게. 퇴근길 채소가게 진소야가 2027년 상반기 서울 역 앞에서 먼저 열려요.">
 <meta name="theme-color" content="#070A08">
 <meta property="og:type" content="website">
 <meta property="og:title" content="채소값 75% 아끼고, 버리는 건 없애드려요 | 진소야">
@@ -92,7 +92,7 @@ a{color:inherit}
 .film .more:hover{color:#fff}
 .film .badge{background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.32); color:#fff; box-shadow:none}
 .film .badge i{background:#fff; color:var(--ink)}
-.kicker{margin-top:1.25rem; font-size:clamp(1.0625rem, 4.4vw, 1.5rem); font-weight:800; letter-spacing:-0.03em; color:var(--lime); text-shadow:0 1px 18px rgba(0,0,0,.35)}
+.kicker{margin-top:1.25rem; text-wrap:balance; font-size:clamp(1.0625rem, 4.4vw, 1.5rem); font-weight:800; letter-spacing:-0.03em; color:var(--lime); text-shadow:0 1px 18px rgba(0,0,0,.35)}
 .kicker + h1{margin-top:.375rem}
 .film-note{position:absolute; right:var(--gutter); top:4.5rem; color:rgba(255,255,255,.6)}
 .hero-cta{margin-top:2rem; display:grid; justify-items:center; gap:.75rem}
@@ -153,7 +153,7 @@ a{color:inherit}
 .bits{position:absolute; inset:0; z-index:2; pointer-events:none}
 .bits img{position:absolute; left:40%; top:40%; width:20%; height:auto; opacity:0}
 .ub-name{font-size:clamp(.8125rem, 3.2vw, 1rem); font-weight:700; color:rgba(255,255,255,.75)}
-.ub-price{display:grid; justify-items:center; line-height:1.3}
+.ub-price{display:grid; justify-items:center; line-height:1.3; white-space:nowrap}
 .ub-price s{font-size:clamp(.6875rem, 2.8vw, .875rem); color:rgba(255,255,255,.4); transition:color .4s}
 .ub-price b{font-size:clamp(1.0625rem, 4.6vw, 1.625rem); font-weight:800; letter-spacing:-0.04em; color:var(--lime); transition:opacity .45s .15s, translate .45s .15s var(--ease)}
 .ub-src{color:rgba(255,255,255,.45); text-align:center}
@@ -233,7 +233,8 @@ a{color:inherit}
 @media (prefers-reduced-motion: reduce){.unfold .frame video{display:none}}
 .unfold .frame::after{content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(to bottom, rgba(5,10,18,.82), rgba(5,10,18,.35) 38%, transparent 62%)}
 .unfold .copy{position:relative; z-index:1; align-self:start; color:#fff; text-align:center; padding:clamp(5.5rem, 14svh, 8rem) var(--gutter) 0}
-.unfold .copy .sub{color:rgba(255,255,255,.85)}
+.unfold .copy{text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.unfold .copy .sub{color:rgba(255,255,255,.9)}
 .split{display:none}
 .unfold .fine{position:absolute; z-index:3; right:var(--gutter); top:4.5rem; color:rgba(255,255,255,.75)}
 
@@ -371,6 +372,8 @@ footer p + p{margin-top:.25rem}
   .o8{--s:6.5rem; bottom:8%; right:38%}
   .unbundle.live .ub-stage{padding-bottom:1.5rem}
   .shelf{grid-template-columns:repeat(6, 1fr); width:min(100%, 76rem); gap:1rem}
+  .ub-price b{font-size:clamp(1rem, 2vw, 1.625rem)}
+  .ub-price s{font-size:clamp(.6875rem, 1vw, .875rem)}
   .ub-stage{gap:clamp(2rem, 7svh, 4rem)}
   .duo{width:min(100%, 60rem, 108svh); margin-inline:auto}
   .kstage{grid-template-columns:auto auto; gap:6rem; justify-content:center; align-items:center}
@@ -402,7 +405,7 @@ footer p + p{margin-top:.25rem}
       <video class="film-v" muted playsinline preload="none" aria-hidden="true"></video>
       <div class="film-copy">
         <p class="badge"><i>2027 상반기</i>서울 역 앞 오픈</p>
-        <p class="kicker">1∼2인 가구를 위한 마이크로 그로서리</p>
+        <p class="kicker">1,487만 1∼2인 가구를 위한 마이크로 그로서리</p>
         <h1 id="hero-title">채소값 75% 아끼고<br>버리는 건 없애드려요</h1>
         <p class="sub">닭볶음탕 한 번 기준</p>
         <div class="hero-cta"><a class="btn" href="#signup">오픈 알림 받기</a><a class="more" href="#how">어떻게요?</a></div>
@@ -496,8 +499,8 @@ footer p + p{margin-top:.25rem}
             <img class="one" src="assets/ub-garlic-one.jpg" width="640" height="640" alt="" loading="lazy">
             <span class="bits"><img src="assets/v-garlic.png" width="280" height="280" alt="" loading="lazy"><img src="assets/v-garlic.png" width="280" height="280" alt="" loading="lazy"><img src="assets/v-garlic.png" width="280" height="280" alt="" loading="lazy"><img src="assets/v-garlic.png" width="280" height="280" alt="" loading="lazy"><img src="assets/v-garlic.png" width="280" height="280" alt="" loading="lazy"></span>
           </div>
-          <p class="ub-name">마늘</p>
-          <p class="ub-price"><s><span class="sr">마트 </span>깐마늘 한 봉지 2,430원</s><b><span class="sr">진소야 </span>1쪽 100원</b></p>
+          <p class="ub-name">깐마늘</p>
+          <p class="ub-price"><s><span class="sr">마트 </span>한 봉지 2,430원</s><b><span class="sr">진소야 </span>1쪽 100원</b></p>
         </li>
       </ul>
       <p class="fine ub-src">마트 묶음은 2026년 11월 소매가, 진소야는 예정가예요</p>
