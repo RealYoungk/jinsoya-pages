@@ -211,3 +211,33 @@ main { display: block; }
   .chip { padding: .15rem .5rem; }
   .wait { font-size: .8rem; }
 }
+
+/* 제철 */
+.season-tag {
+  display: inline-block; margin-left: .6rem; vertical-align: middle;
+  padding: .2rem .7rem; border-radius: 999px;
+  border: 1.5px solid var(--lime); color: var(--lime);
+  font-size: .55em; font-weight: 800; letter-spacing: -0.01em;
+}
+.block.season { padding-bottom: 1rem; }
+.block.season h2 { color: var(--lime); }
+.season-list { list-style: none; margin: 1.75rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .75rem; }
+.season-list li {
+  display: flex; align-items: center; gap: .75rem;
+  padding: .6rem 1.25rem .6rem .6rem; border-radius: 999px;
+  background: linear-gradient(135deg, rgba(200, 241, 105, .16), rgba(142, 227, 176, .08));
+  border: 1px solid rgba(200, 241, 105, .35);
+}
+.season-list img { width: 3rem; height: 3rem; object-fit: contain; filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .5)); }
+.season-list div { display: flex; flex-direction: column; line-height: 1.25; }
+.season-list strong { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.03em; }
+.season-list span { color: var(--muted); font-size: .85rem; font-weight: 600; }
+.card-season { font-size: .8rem; }
+.chip.season-on { border: 1.5px solid var(--lime); color: var(--lime); background: transparent; }
+.chip.season-soon { border: 1.5px dashed rgba(200, 241, 105, .6); color: var(--lime); background: transparent; }
+.season-off { color: var(--muted); }
+@media (max-width: 30rem) {
+  .card-season { font-size: .72rem; }
+  .season-list li { padding-right: 1rem; }
+  .season-list img { width: 2.5rem; height: 2.5rem; }
+}
