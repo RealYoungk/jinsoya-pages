@@ -15,14 +15,13 @@
 <link rel="canonical" href="https://realyoungk.github.io/jinsoya-pages/">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/brand.css">
 <style>
 @property --p{syntax:"<integer>"; inherits:false; initial-value:80}
 :root{
+  /* 브랜드 색·글꼴·움직임 곡선은 assets/brand.css (장보기와 공통) */
   --ink:#14201A; --muted:#5D6B62; --line:#E3E8E1; --soft:#F4F7F1; --night:#0E1A13;
-  --green:#1F7A3A; --lime:#C8F169; --coral:#FF7A59; --mint:#8EE3B0; --sun:#FFE48A;
-  --font:"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
   --gutter:clamp(1.25rem, 5vw, 3rem); --wrap:72rem; --bar:4.5rem;
-  --ease:cubic-bezier(.2,.8,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth; scroll-padding-bottom:calc(var(--bar) + 1rem); -webkit-text-size-adjust:100%}
@@ -52,6 +51,10 @@ a{color:inherit}
 .top{position:fixed; inset:0 0 auto 0; z-index:20; display:flex; justify-content:space-between; align-items:center; padding:.75rem var(--gutter); color:#fff; background:rgba(7,10,8,.55); backdrop-filter:saturate(1.4) blur(16px); -webkit-backdrop-filter:saturate(1.4) blur(16px); border-bottom:1px solid rgba(255,255,255,.06)}
 .top .btn{background:#fff; color:var(--ink)}
 .top .btn:hover{background:var(--lime)}
+.top-nav{display:flex; align-items:center; gap:clamp(.875rem, 3vw, 1.5rem)}
+.top-link{color:rgba(255,255,255,.82); font-weight:600; font-size:.875rem; text-decoration:none; padding-block:.5rem; transition:color .2s}
+.top-link:hover{color:var(--lime)}
+.top-link:focus-visible{outline-color:var(--lime); border-radius:.25rem}
 .wordmark{font-weight:900; font-size:1.25rem; letter-spacing:-0.06em; text-decoration:none}
 .top .btn{min-height:2.375rem; padding:.375rem 1rem; font-size:.875rem}
 
@@ -393,7 +396,10 @@ footer p + p{margin-top:.25rem}
 
 <header class="top">
   <a class="wordmark" href="#">진소야</a>
-  <a class="btn" href="#signup">오픈 알림 받기</a>
+  <nav class="top-nav" aria-label="진소야 페이지">
+    <a class="top-link" href="jangbogi/">이번 주 장보기</a>
+    <a class="btn" href="#signup">오픈 알림 받기</a>
+  </nav>
 </header>
 
 <main>
@@ -711,6 +717,7 @@ footer p + p{margin-top:.25rem}
   <div class="wrap">
     <p>진소야(진짜 소매 야채가게)는 아직 사업자 등록 전이에요.</p>
     <p>문의 <a href="mailto:youngjin5394@gmail.com">youngjin5394@gmail.com</a></p>
+    <p><a href="jangbogi/">이번 주 장보기</a></p>
     <p><a href="privacy.html">개인정보 처리방침</a></p>
   </div>
 </footer>

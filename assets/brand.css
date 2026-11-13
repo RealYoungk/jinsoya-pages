@@ -1,0 +1,13 @@
+/* 진소야 브랜드 공통 값 — 랜딩과 장보기가 같이 쓰는 원본 하나.
+   랜딩: index.html이 assets/brand.css로 읽는다.
+   장보기: jinsoya_jangbogi/build.sh가 빌드 때 web/styles/brand.css로 복사한다.
+   페이지마다 다른 배경·글자·선 색(--ink, --stage 같은 것)은 각 페이지 CSS에 둔다. */
+:root {
+  --green: #1F7A3A;
+  --lime: #C8F169;
+  --mint: #8EE3B0;
+  --coral: #FF7A59;
+  --sun: #FFE48A;
+  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}

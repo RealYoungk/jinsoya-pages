@@ -1,18 +1,14 @@
 /* 진소야 장보기 — 랜딩 v8 언어: 어두운 무대 + 굵은 흰 글씨 + 라임 강조 + 코랄은 "비싸요" */
 :root {
+  /* 브랜드 색·글꼴·움직임 곡선은 styles/brand.css (랜딩 assets/brand.css를 빌드 때 복사) */
   --stage: #0B0E0A;
   --stage-2: #121812;
   --card: #151C16;
   --line: rgba(244, 247, 241, .10);
   --text: #F4F7F1;
   --muted: #A3AFA6;
-  --lime: #C8F169;
-  --mint: #8EE3B0;
-  --coral: #FF7A59;
-  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
   --gutter: clamp(1rem, 5vw, 3rem);
   --wrap: 68rem;
-  --ease: cubic-bezier(.2, .8, .2, 1);
   color-scheme: dark;
 }
 
